@@ -1,0 +1,16 @@
+# Vars
+variables:
+  devopsOrgUri: 'https://dev.azure.com/jimmyaanraad'
+
+  tag: '$(Build.BuildId)'
+  imageName: 'fxrudmsz1/devops-selfhosted-ubuntu-agent'
+  containerRegistry: 'dockerHub'
+  
+  azureResourceManagerConnection: 'az_devops-selfhosted-ubuntu-agent'
+  resourceGroupName: 'rg_devops-selfhosted-ubuntu-agent'
+  location: 'West Europe'
+
+  csmDeployFileLink: 'https://raw.githubusercontent.com/jimaan/devops-selfhosted-ubuntu-agent/main/arm/selfhosted-ubuntu-agent.json'
+  csmDeployParametersFileLink: 'https://raw.githubusercontent.com/jimaan/devops-selfhosted-ubuntu-agent/main/arm/selfhosted-ubuntu-agent.parameters.json'
+  
+  csmDestroyFileLink: 'https://raw.githubusercontent.com/jimaan/devops-selfhosted-ubuntu-agent/main/arm/destroy-all-resources.json'
